@@ -31,7 +31,7 @@
                 $sql-> execute();
                 return $resultado =$sql->fetchAll();
 
-            public function uptade_producto_id($id_){
+            public function update_producto_id($id_){
                 $conectar = parent::conexion();
                 $sql = "update crud set NIT=0, where id_=?";
                 $sql = $conectar->prepare($sql);
