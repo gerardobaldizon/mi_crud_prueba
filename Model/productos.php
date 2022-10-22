@@ -32,11 +32,12 @@
             $sql-> execute();
             return $resultado =$sql->fetchAll();
         }
-        public function update_producto_id($prod_id){
+        public function update_producto_id($prod_id, $pro_nombre){
             $conectar = parent::conexion();
-            $sql = "update crud set NIT=0, where id_=?";
+            $sql = "update crud set nombre=?, where id_=?";
             $sql = $conectar->prepare($sql);
-            $sql-> bindvalue(1,$prod_id);
+            $sql-> bindvalue(1,$pro_nombre);
+            $sql-> bindvalue(2,$prod_id);
             $sql-> execute();
             return $resultado =$sql->fetchAll();
         }
