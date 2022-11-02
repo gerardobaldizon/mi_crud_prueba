@@ -1,0 +1,52 @@
+* Para inicializar github
+git init 
+
+* Para configurar correo de usuario de github
+git congif --global user.email "ejemplomail@gmail.com"
+
+* Para configurar usuario 
+git congif --global user.name "usuario_git"
+
+* Añadir el origen del repositorio
+git remote add origin link_repositorio (https://github.com/gerardobaldizon/prueba_crud_adminLTE_MVC.git)
+
+* Elegir el branch 
+git branch -M main 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+echo "# 1234gghj" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gerardobaldizon/1234gghj.git
+git push -u origin main
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+git remote add origin https://github.com/gerardobaldizon/1234gghj.git
+git branch -M main
+git push -u origin main
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* Para añadir cambios 
+git add .
+
+* Para comitear cuando se haya terminado los cambios 
+git commit -m "Nombre del commit"
+
+* Para pushear git
+git push -u origin main_or_branch
+
+* Para pulear git
+git pull
+
+* Para revisar cambios 
+git checkout main_or_branch
+
+
+
